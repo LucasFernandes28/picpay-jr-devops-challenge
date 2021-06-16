@@ -5,8 +5,7 @@ services:
     ports:
       - "5000:5000"
     networks:
-      - frontend
-      - backend
+      - app
     depends_on: 
       - reader
       - writer
@@ -15,18 +14,21 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - frontend
+      - app
   writer:
     build: services/writer
     ports:
       - "8081:8081"
     networks:
-      - backend
+      - app
   redis:
     image: "redis:alpine"
     expose: 
       - 6379
+    networks: 
+      - app
 
 networks:
-  backend:
-  frontend:
+  #backend:
+  #frontend:
+  app:
