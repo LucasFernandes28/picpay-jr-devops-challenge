@@ -3,6 +3,6 @@ WORKDIR /app
 ADD . /app
 EXPOSE 8081
 COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
-CMD ["main.py"]
-ENTRYPOINT ["python"]
+#RUN pip freeze > requirements.txt
+RUN pip install -r requirements.txt
+CMD ["python", "main.py"]
