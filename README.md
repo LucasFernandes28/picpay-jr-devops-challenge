@@ -41,13 +41,12 @@ O serviço web não sofreu alterações, não vi necessidade de modificar para q
 
 Com todos os serviços funcionando de forma individual foi o momento de executar o Compose e analisar se todos estariam executando e interagindo em si. No _Home_ da aplicação foi apresentado que os serviços estavam _up_ e ao testar obtive sucesso, concluindo que a aplicação, de forma geral, estava funcionando normalmente.
 
-## Observações, Sugestões e Melhorias
+## Observações
 
-1. Atualização da pagina Reader;
-2. Bug encontrado no arquivo main.go;
-3. Uso de volumes para os serviços;
-4. Organização de Networks no Compose;
-5. Atenção para um _warning_ ao levantar o serviço reader, referente ao golang.
+1. Erro de compilação encontrado no arquivo main.go;
+2. Uso de volumes para os serviços (web);
+3. Organização das Networks no Compose;
+4. Atenção para um _warning_ ao levantar o serviço reader, referente ao golang.
 
 ## Arquitetura 
 
