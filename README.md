@@ -51,4 +51,4 @@ Com todos os serviços funcionando de forma individual foi o momento de executar
 
 ## Arquitetura 
 
-Inserir Diagrama
+![Arquitetura](arquitetura.jpg)
